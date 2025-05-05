@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Showroom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #111;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: #0072ff; }
+
+    .hero {
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      background: black;
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .btn-link:hover {
+      background: #333;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .action-box {
+      text-align: center;
+      margin: 0 30px;
+    }
+
+    .action-box img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .car-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      border-bottom: 1px solid #eee;
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .car-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .car-section img {
+      width: 45%;
+      border-radius: 8px;
+    }
+
+    .car-text {
+      width: 45%;
+    }
+
+    .car-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .car-text p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 40px 60px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .footer-links div {
+      flex: 1 1 150px;
+    }
+
+    .footer-links a {
+      color: #bbb;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="BMW Logo" height="40">
+    <nav>
+      <a href="#" class="nav-link">Models</a>
+      <a href="#" class="nav-link">Electric</a>
+      <a href="#" class="nav-link">Configurator</a>
+      <a href="#" class="nav-link">Shop</a>
+      <a href="#" class="nav-link">More BMW</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>The X7</h1>
+    <p>THIS IS FORWARDISM</p>
+    <a href="https://www.bmw.in" target="_blank" class="btn-link">Discover now</a>
+  </section>
+
+  <section class="actions">
+    <div class="action-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/744/744465.png" alt="Find Car Icon"/>
+      <p>Find a new car</p>
+    </div>
+    <div class="action-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Test Drive Icon"/>
+      <p>Book a test drive</p>
+    </div>
+  </section>
+
+  <section class="car-section">
+    <img src="x5.jpg" alt="BMW X5">
+    <div class="car-text">
+      <h2>The X5</h2>
+      <p>CRAFTED SUPREMACY</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Discover now</a>
+    </div>
+  </section>
+
+  <section class="car-section">
+    <img src="BMW iX xDrive50.jpg" alt="BMW iX">
+    <div class="car-text">
+      <h2>BMW iX xDrive50</h2>
+      <p>Stay ahead of the curve.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Discover now</a>
+    </div>
+  </section>
+
+  <section class="car-section">
+    <img src="The 7.jpg" alt="BMW 7 Series">
+    <div class="car-text">
+      <h2>The 7</h2>
+      <p>This is forwardism: The 7.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Know more</a>
+    </div>
+  </section>
+
+  <section class="car-section">
+    <img src="The iX.jpg" alt="BMW iX">
+    <div class="car-text">
+      <h2>The iX</h2>
+      <p>The joy of electric driving.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Know more</a>
+    </div>
+  </section>
+
+  <section class="car-section">
+    <img src="download.jpg" alt="Special Offers">
+    <div class="car-text">
+      <h2>BMW Special Offers</h2>
+      <p>Check our finance offers available across the BMW range.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Know more</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© BMW AG 2025</p>
+    <div class="footer-links">
+      <div>
+        <strong>Contact</strong>
+        <a href="#">Find a Dealer</a>
+        <a href="#">Test Drive</a>
+        <a href="#">Careers</a>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <a href="#">Build your BMW</a>
+        <a href="#">BMW Finance</a>
+        <a href="#">BMW Safety</a>
+      </div>
+      <div>
+        <strong>Experiences</strong>
+        <a href="#">BMW Group</a>
+        <a href="#">BMW Motorrad</a>
+        <a href="#">Charging Network</a>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <a href="#">Disclaimer</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Random Car Section Navigation -->
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const carSections = document.querySelectorAll('.car-section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const randomIndex = Math.floor(Math.random() * carSections.length);
+        carSections[randomIndex].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
