@@ -1,120 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Showroom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #111;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: #0072ff; }
+
+    .hero {
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      background: black;
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .btn-link:hover {
+      background: #333;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .action-box {
+      text-align: center;
+      margin: 0 30px;
+    }
+
+    .action-box img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .car-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      border-bottom: 1px solid #eee;
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .car-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .car-section img {
+      width: 45%;
+      border-radius: 8px;
+    }
+
+    .car-text {
+      width: 45%;
+    }
+
+    .car-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .car-text p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 40px 60px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .footer-links div {
+      flex: 1 1 150px;
+    }
+
+    .footer-links a {
+      color: #bbb;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navbar -->
-    <nav class="bg-blue-600 text-white p-4 sticky top-0 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Happy</h1>
-            <ul class="flex space-x-6">
-                <li><a href="#home" class="hover:underline">Home</a></li>
-                <li><a href="#about" class="hover:underline">About</a></li>
-                <li><a href="#skills" class="hover:underline">Skills</a></li>
-                <li><a href="#education" class="hover:underline">Education</a></li>
-                <li><a href="#contact" class="hover:underline">Contact</a></li>
-            </ul>
-        </div>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="BMW Logo" height="40">
+    <nav>
+      <a href="#" class="nav-link">Models</a>
+      <a href="#" class="nav-link">Electric</a>
+      <a href="#" class="nav-link">Configurator</a>
+      <a href="#" class="nav-link">Shop</a>
+      <a href="#" class="nav-link">More BMW</a>
     </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-        <div class="text-center">
-            <h2 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h2>
-            <p class="text-xl mb-6">Happy - Front-End Developer & AIML Student</p>
-            <a href="#about" class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200">Learn More</a>
-        </div>
-    </section>
+  <section class="hero">
+    <h1>The X7</h1>
+    <p>THIS IS FORWARDISM</p>
+    <a href="https://www.bmw.in" target="_blank" class="btn-link">Discover now</a>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-6 md:mb-0">
-                     
-                </div>
-                <div class="md:w-1/2 md:pl-8">
-                    <p class="text-lg leading-relaxed">
-                        Hi, I'm Happy, a passionate Front-End Developer and a student of Artificial Intelligence and Machine Learning at Dronacharya College of Engineering. I love creating user-friendly, responsive, and visually appealing web applications. With a strong foundation in web technologies and a keen interest in AI, I aim to blend creativity with cutting-edge technology to build innovative solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="actions">
+    <div class="action-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/744/744465.png" alt="Find Car Icon"/>
+      <p>Find a new car</p>
+    </div>
+    <div class="action-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Test Drive Icon"/>
+      <p>Book a test drive</p>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">My Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-2">HTML & CSS</h3>
-                    <p>Proficient in creating semantic HTML structures and responsive designs using CSS, including frameworks like Tailwind CSS and Bootstrap.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
-                    <p>Skilled in JavaScript for dynamic and interactive web applications, with experience in ES6+ and libraries like React.js.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-2">React.js</h3>
-                    <p>Experienced in building single-page applications using React, including state management with Redux and hooks.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-2">Version Control</h3>
-                    <p>Comfortable with Git and GitHub for version control and collaborative development.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
-                    <p>Knowledge of UI/UX principles to create intuitive and visually appealing interfaces using tools like Figma.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-2">AI & ML Basics</h3>
-                    <p>Understanding of AI/ML concepts, including Python libraries like NumPy, Pandas, and Scikit-learn for data analysis and model building.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="car-section">
+    <img src="x5.jpg" alt="BMW X5">
+    <div class="car-text">
+      <h2>The X5</h2>
+      <p>CRAFTED SUPREMACY</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Discover now</a>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">Education</h2>
-            <div class="max-w-2xl mx-auto">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-2">B.Tech in Artificial Intelligence and Machine Learning</h3>
-                    <p class="text-lg font-medium">Dronacharya College of Engineering, Gurugram</p>
-                    <p class="text-gray-600">2025 - Present</p>
-                    <p class="mt-2">Currently pursuing a degree in AIML, with a focus on integrating AI technologies with web development to create intelligent applications.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="car-section">
+    <img src="BMW iX xDrive50.jpg" alt="BMW iX">
+    <div class="car-text">
+      <h2>BMW iX xDrive50</h2>
+      <p>Stay ahead of the curve.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Discover now</a>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center DAVAM">Contact Me</h2>
-            <p class="text-lg text-center mb-8">Feel free to reach out for collaboration or opportunities!</p>
-            <div class="max-w-md mx-auto">
-                
-            </div>        <p class="text-lg"><strong>Email:</strong> hdyadavt2004@gamil.com</p>
-                   
-                    <p class="text-lg"><strong>GitHub:</strong> <a href="https://github.com/workwithHappy-ai" class="text-blue-600 hover:underline">github.com/Happy</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="car-section">
+    <img src="The 7.jpg" alt="BMW 7 Series">
+    <div class="car-text">
+      <h2>The 7</h2>
+      <p>This is forwardism: The 7.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Know more</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white p-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Happy. All rights reserved.</p>
-        </div>
-    </footer>
+  <section class="car-section">
+    <img src="The iX.jpg" alt="BMW iX">
+    <div class="car-text">
+      <h2>The iX</h2>
+      <p>The joy of electric driving.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Know more</a>
+    </div>
+  </section>
+
+  <section class="car-section">
+    <img src="download.jpg" alt="Special Offers">
+    <div class="car-text">
+      <h2>BMW Special Offers</h2>
+      <p>Check our finance offers available across the BMW range.</p>
+      <a href="https://www.bmw.in" target="_blank" class="btn-link">Know more</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© BMW AG 2025</p>
+    <div class="footer-links">
+      <div>
+        <strong>Contact</strong>
+        <a href="#">Find a Dealer</a>
+        <a href="#">Test Drive</a>
+        <a href="#">Careers</a>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <a href="#">Build your BMW</a>
+        <a href="#">BMW Finance</a>
+        <a href="#">BMW Safety</a>
+      </div>
+      <div>
+        <strong>Experiences</strong>
+        <a href="#">BMW Group</a>
+        <a href="#">BMW Motorrad</a>
+        <a href="#">Charging Network</a>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <a href="#">Disclaimer</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Random Car Section Navigation -->
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const carSections = document.querySelectorAll('.car-section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const randomIndex = Math.floor(Math.random() * carSections.length);
+        carSections[randomIndex].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
 </body>
 </html>
