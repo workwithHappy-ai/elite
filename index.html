@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elite Showroom</title>
+  <title>Elite</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -546,14 +546,33 @@
   </footer>
 
   <script>
-    // Hamburger Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
+    
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('nav');
 
     hamburger.addEventListener('click', () => {
       nav.classList.toggle('active');
     });
 
+    hamburger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        nav.classList.toggle('active');
+      }
+    });
+
+    // Random Car Section Navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    const carSections = document.querySelectorAll('.car-section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const randomIndex = Math.floor(Math.random() * carSections.length);
+        carSections[randomIndex].scrollIntoView({ behavior: 'smooth' });
+        if (window.innerWidth <= 768) {
+          nav.classList.remove('active');
+        }
     hamburger.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         nav.classList.toggle('active');
@@ -589,19 +608,7 @@
     document.querySelectorAll('.footer-links div').forEach(div => observer.observe(div));
   </script>
   <script>
-    // Hamburger Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-  
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  
-    hamburger.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        nav.classList.toggle('active');
-      }
-    });
+    
   
     // Random Car Section Navigation
     const navLinks = document.querySelectorAll('.nav-link');
